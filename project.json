@@ -9,6 +9,9 @@
 
     "dependencies": {
         "dnx-clr-win-x64": "1.0.0-rc1-update2",
+        "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+        "EntityFramework.Commands": "7.0.0-rc1-final",
+        "EntityFramework7.Npgsql": "3.1.0-rc1-3",
         "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
         "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
         "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
@@ -22,7 +25,8 @@
     },
 
     "commands": {
-        "web": "Microsoft.AspNet.Server.Kestrel --server.urls=http://*:7000"
+        "ef": "EntityFramework.Commands",
+        "web": "Microsoft.AspNet.Server.Kestrel --server.urls=http://*:1000"
     },
 
     "frameworks": {
