@@ -1,8 +1,8 @@
 NAME = aspnet5api
-CONTAINER_NAME = apsnet5api
+CONTAINER_NAME = aspnet5api
 IMAGE = $(shell echo $(NAME) | tr A-Z a-z)
 REGISTRY_NAME = mconi2007
-RUN_ARGS = -p 1000:1000
+RUN_ARGS = -p 7050:7050
 
 # Variables below should not need changing
 
