@@ -1,0 +1,36 @@
+﻿{
+  "AWSEBDockerrunVersion": 2,
+  "authentication": {
+    "bucket": "my-bucket",
+    "key": "my-key"
+  },
+  "containerDefinitions": [
+    {
+      "name": "aspnet5api",
+      "image": "mconi2007/aspnet5api:latest",
+      "essential": true,
+      "memory": 128,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 7050
+        }
+      ],
+      "links": [
+        "redis"
+      ]
+    },
+    {
+      "name": "redis",
+      "image": "redis:latest",
+      "essential": true,
+      "memory": 128,
+      "portMappings": [
+        {
+          "hostPort": 6379,
+          "containerPort": 6379
+        }
+      ]
+    }
+  ]
+}
