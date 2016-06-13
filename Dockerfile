@@ -57,7 +57,7 @@ VOLUME src/${my_app}/wwwroot/Uploads /opt/app/src/${my_app}/wwwroot/Uploads
 
 # Tests passed - we can continue the build
 # Expose the port that Kestrel listens on
-EXPOSE 5005
+EXPOSE 7050
 
 # Start the application web target on running container
 WORKDIR /opt/app/src/${my_app}
